@@ -23,7 +23,7 @@ describe('1 - Teste a função fecthProducts', () => {
 
   test('se o retorno da função com o argumento retorna o esperado', async () => {
     const actual = await fetchProducts('computador');
-    expect(actual).toEqual(computadorSearch);
+    expect(actual).toEqual(computadorSearch.results);
   });
 
   test('se ao chamar a função fetchProducts sem argumento, retorna um erro com a mensagem: You must provide an url', async () => {
